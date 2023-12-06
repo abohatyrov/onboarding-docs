@@ -39,8 +39,7 @@ If desired, use Terraform to destroy the AWS resources created during the proces
 # Let's Get Started:
 Proceed to the next sections to follow the step-by-step guide on launching a VM and installing Nagios with NRPE using Terraform and Ansible.
 
-## Step 1: Create Terraform Configuration
-### Create files and directories
+## Step 1: Create files and directories
 Create a directory structure for this project, you can use next script to create the structure.
 
 ```bash
@@ -163,7 +162,7 @@ __Module input variables:__
 - __instance_type:__ Specifies the instance type as `t2.micro`.
 - __sg_name:__ Specifies the name of the security group as `nagios-sg`.
 - __icmp:__ Enables ICMP traffic in the security group.
-key_name: Specifies the key pair name as `nagios`.
+- __key_name:__ Specifies the key pair name as `nagios`.
 - __add_ports:__ Opens additional ports, such as port `5666`, in the security group.
 - __key_path:__ Specifies the path to the public key file for SSH access.
 
