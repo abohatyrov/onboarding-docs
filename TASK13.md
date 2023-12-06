@@ -271,9 +271,7 @@ The configuration tasks (`configure.yml`) include creating directories, copying 
    {{ define "telegram.default.text" }}
    {{ range .Alerts }}
    <b>🔥{{ .Status | toUpper }}</b> - {{ .Annotations.summary }} on {{ .Labels.instance }}
-   <b>Details:</
-
-b>
+   <b>Details:</b>
    {{ .Annotations.description }}
 
    {{ end }}
